@@ -3,7 +3,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 import os
 
 # Replace 'YOUR_BOT_TOKEN' with the token you received from BotFather
-TOKEN = os.environ[BOT_TOKEN]
+TOKEN = "7261084403:AAE1_7Wi-35dD2AX9sjy0lrEJyHMUxAeGWA"
 
 bot = telebot.TeleBot(TOKEN)
 
