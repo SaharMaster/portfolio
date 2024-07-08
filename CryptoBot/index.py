@@ -9,60 +9,60 @@ bot = telebot.TeleBot(TOKEN)
 
 # Dictionary to store channel links
 channels = {
-    '🇷🇺Russian': 'https://t.me/+PNfma7G6yZozY2Ji',
-    '🇺🇦Ukrainian': 'https://t.me/+dxuUIDBNB9FlYWMy',
-    '🇬🇧English': 'https://t.me/+Ckm_3-vI6eAxOWIy',
-    '🇪🇸Español': 'https://t.me/+I47gaPJ5qFk4YTg6',
-    '🇮🇹Italian': 'https://t.me/+z4f3mo1xKFQ4NmUy'
+    '🇷🇺Русский🇷🇺': 'https://t.me/+PNfma7G6yZozY2Ji',
+    '🇺🇦Українська🇺🇦': 'https://t.me/+dxuUIDBNB9FlYWMy',
+    '🇬🇧English🇬🇧': 'https://t.me/+Ckm_3-vI6eAxOWIy',
+    '🇪🇸Español🇪🇸': 'https://t.me/+I47gaPJ5qFk4YTg6',
+    '🇮🇹Italiano🇮🇹': 'https://t.me/+z4f3mo1xKFQ4NmUy'
 }
 
 # Updated dictionary of welcome messages in different languages
 welcome_messages = {
-    '🇷🇺Russian': """🌐 CryptoArk 🌐
+    '🇷🇺Русский🇷🇺': """🌐 CryptoArk 🌐
 
-Добро пожаловать на CryptoArk - ваш лучший источник последних криптовалютных новостей и анализа рынка! Присоединяйтесь к нам для:
+Добро пожаловать на CryptoArk - источник самых свежих криптовалютных новостей и анализа рынка! Присоединяйтесь к нам, для:
 
-📈 Актуальные криптовалютные новости
-📊 Всесторонний анализ рынка
-🔔 Важнейшие обновления и события
+📈 Актуальных криптовалютных новостей
+📊 Технического анализа рынка
+🔔 Важных обновлений и событий
 
-Найдите ссылку на канал на предпочтительном для вас языке ниже:""",
-    '🇺🇦Ukrainian': """🌐 CryptoArk 🌐
+Ссылку на канал на выбранном языке вы можете найти ниже:""",
+    '🇺🇦Українська🇺🇦': """🌐 CryptoArk 🌐
 
 Ласкаво просимо до CryptoArk - найкращого джерела останніх криптовалютних новин та аналізу ринку! Приєднуйтесь до нас для:
 
-📈 Актуальні новини криптовалют
-📊 Всебічний аналіз ринку
-🔔 Важливі оновлення та події
+📈 Актуальних новин криптовалют
+📊 Технічного аналізу ринку
+🔔 Важливих оновлень та подій 
 
-Нижче ви знайдете посилання на канал вашою вибраною мовою:""",
-    '🇬🇧English': """🌐 CryptoArk 🌐
+Нижче ви знайдете посилання на канал вибраною вами мовою:""",
+    '🇬🇧English🇬🇧': """🌐 CryptoArk 🌐
 
-Welcome to CryptoArk – your ultimate source for the latest cryptocurrency news and market analysis! Join us for:
+Welcome to CryptoArk - the ultimate source for the latest cryptocurrency news and market analysis! Join us for:
 
 📈 Up-to-date cryptocurrency news
-📊 Comprehensive market analysis
-🔔 Crucial updates and events
+📊 Technical analysis of the market
+🔔 Important updates and events 
 
-Find the link to the channel in your preferred language below:""",
-    '🇪🇸Español': """🌐 CryptoArk 🌐
+You can find the link to the channel in the preferred language below:""",
+    '🇪🇸Español🇪🇸': """🌐 CryptoArk 🌐
 
-¡Bienvenido a CryptoArk - su fuente definitiva para las últimas noticias cryptocurrency y análisis de mercado! Únete a nosotros para:
+Bienvenido a CryptoArk - ¡la fuente definitiva de las últimas noticias sobre criptodivisas y análisis de mercado! Únase a nosotros para:
 
 📈 Noticias actualizadas sobre criptodivisas
-📊 Análisis exhaustivo del mercado
-🔔 Actualizaciones y eventos cruciales
+📊 Análisis técnico del mercado
+🔔 Actualizaciones y eventos importantes 
 
-Encuentra el enlace al canal en tu idioma preferido a continuación:""",
-    '🇮🇹Italian': """🌐 CryptoArk 🌐
+Puede encontrar el enlace al canal en el idioma preferido a continuación:""",
+    '🇮🇹Italiano🇮🇹': """🌐 CryptoArk 🌐
 
-Benvenuti su CryptoArk - la vostra fonte definitiva per le ultime notizie sulle criptovalute e le analisi di mercato! Unitevi a noi per:
+Benvenuti su CryptoArk - la fonte definitiva per le ultime notizie sulle criptovalute e le analisi di mercato! Unitevi a noi per:
 
 📈 Notizie aggiornate sulle criptovalute
-📊 Analisi di mercato esaustive
-🔔 Aggiornamenti ed eventi cruciali
+📊 Analisi tecnica del mercato
+🔔 Aggiornamenti ed eventi importanti 
 
-Trovate il link al canale nella vostra lingua preferita qui sotto:"""
+Di seguito trovate il link al canale nella lingua preferita:"""
 }
 
 def start_markup():
@@ -81,7 +81,7 @@ def language_markup():
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
     bot.reply_to(message, 
-                 "Welcome to CryptoArk bot! 🌐 Click 'Start!' to begin.",
+                 "Welcome to CryptoArk bot! Click 'Start' to begin.",
                  reply_markup=start_markup())
 
 @bot.callback_query_handler(func=lambda call: True)
@@ -92,10 +92,10 @@ def callback_query(call):
                          "Great! Now, please choose your preferred language:",
                          reply_markup=language_markup())
     elif call.data.startswith("lang_"):
-        language = call.data.split("_")[1]
+        language = call.data[5:]  # Remove 'lang_' prefix
         bot.answer_callback_query(call.id)
-        welcome_message = welcome_messages.get(language, welcome_messages['🇬🇧English'])
-        channel_link = channels.get(language, channels['🇬🇧English'])
+        welcome_message = welcome_messages.get(language, welcome_messages['🇬🇧English🇬🇧'])
+        channel_link = channels.get(language, channels['🇬🇧English🇬🇧'])
         response = f"{welcome_message}\n\n{channel_link}"
         bot.send_message(call.message.chat.id, response)
 
