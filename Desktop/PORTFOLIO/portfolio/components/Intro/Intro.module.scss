@@ -1,0 +1,49 @@
+// FILE: components/Intro/Intro.module.scss
+@import '@/styles/variables';
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content {
+  max-width: $container-width;
+}
+
+.headline {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+  margin-bottom: 2rem;
+}
+
+.gradientText {
+  background: $metallic-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 5s infinite linear;
+  background-size: 400% 100%; // Important for animation
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.subhead {
+  font-size: 1.25rem;
+  color: $primary-accent;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
