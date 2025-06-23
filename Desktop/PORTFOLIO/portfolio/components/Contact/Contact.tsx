@@ -6,6 +6,7 @@ import styles from './Contact.module.scss';
 const Contact = () => {
   return (
     <motion.section
+      id="contact"
       className={styles.contact}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

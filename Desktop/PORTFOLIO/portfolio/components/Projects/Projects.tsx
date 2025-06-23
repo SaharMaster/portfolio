@@ -38,7 +38,7 @@ const Projects = () => {
     };
 
   return (
-    <section className={styles.projects}>
+    <section id='projects' className={styles.projects}>
       <div className={styles.container}>
         <h2 className={styles.heading}>Selected Work</h2>
         <motion.div 

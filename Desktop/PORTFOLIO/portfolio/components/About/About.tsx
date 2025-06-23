@@ -28,6 +28,7 @@ const About = () => {
 
   return (
     <motion.section
+      id="about"
       className={styles.about}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
