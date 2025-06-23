@@ -1,0 +1,12 @@
+@import '@/styles/variables';
+
+.footer {
+  padding: 2rem;
+  text-align: center;
+  border-top: 1px solid lighten($dark-text, 85%);
+  
+  p {
+    font-size: 0.9rem;
+    color: lighten($dark-text, 50%);
+  }
+}

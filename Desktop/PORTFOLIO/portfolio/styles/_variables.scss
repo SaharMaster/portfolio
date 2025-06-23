@@ -1,11 +1,12 @@
-// FILE: styles/_variables.scss
-$dark-bg: #111111;
-$light-text: #EAEAEA;
-$primary-accent: #CCCCCC;
-$metallic-gradient: linear-gradient(90deg, #B7B7B7, #EAEAEA, #B7B7B7);
+// Colors
+$light-bg: #F8F8F8;
+$dark-text: #1A1A1A;
+$primary-accent: #0057FF; // A bold, electric blue for high impact
 
+// Typography
 $font-primary: 'Inter', sans-serif;
 $font-secondary: 'Space Grotesk', sans-serif;
 
+// Layout
 $container-width: 1200px;
 $section-padding: 8rem 0;

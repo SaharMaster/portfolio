@@ -16,7 +16,7 @@ const Intro = () => {
         <h1 className={styles.headline}>
           I don&apos;t just write code.
           <br />
-          <span className={styles.gradientText}>I build digital solutions.</span>
+          <span className={styles.highlightedText}>I build digital solutions.</span>
         </h1>
         <p className={styles.subhead}>
           Focused on crafting clean, efficient, and memorable web experiences.

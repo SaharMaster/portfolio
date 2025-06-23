@@ -1,4 +1,3 @@
-// FILE: components/Intro/Intro.module.scss
 @import '@/styles/variables';
 
 .intro {
@@ -22,28 +21,13 @@
   margin-bottom: 2rem;
 }
 
-.gradientText {
-  background: $metallic-gradient;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  animation: shimmer 5s infinite linear;
-  background-size: 400% 100%; // Important for animation
-}
-
-@keyframes shimmer {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
+.highlightedText {
+  color: $primary-accent;
 }
 
 .subhead {
   font-size: 1.25rem;
-  color: $primary-accent;
+  color: lighten($dark-text, 40%); // A lighter grey for the sub-headline
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;

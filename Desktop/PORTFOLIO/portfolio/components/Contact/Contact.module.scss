@@ -1,0 +1,41 @@
+@import '@/styles/variables';
+
+.contact {
+  padding: $section-padding;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.subhead {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  color: lighten($dark-text, 25%);
+  margin-bottom: 3rem;
+}
+
+.emailButton {
+  display: inline-block;
+  font-family: $font-secondary;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: $primary-accent;
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba($primary-accent, 0.3);
+  }
+}

@@ -1,0 +1,54 @@
+@import '@/styles/variables';
+
+.about {
+  padding: $section-padding;
+  max-width: $container-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); // Simplified to a clean 2-column grid
+  align-items: center;
+  gap: 5rem; // Increased gap for more breathing room
+}
+
+.profileImage {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 600px;
+  border-radius: 8px; // Soften the image corners slightly
+}
+
+.heading {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.bio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: lighten($dark-text, 25%);
+  margin-bottom: 2rem;
+  max-width: 90%;
+}
+
+.principles {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.principleItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.1rem;
+  font-family: $font-secondary;
+
+  svg path {
+    fill: $dark-text; // Change the checkmark icon to be dark
+  }
+}
