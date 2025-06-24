@@ -51,3 +51,15 @@
   line-height: 1.8;
   color: lighten($dark-text, 25%);
 }
+
+@media (max-width: $breakpoint-mobile) {
+    .expertise {
+      padding: 4rem 1rem;
+    }
+    .heading {
+      font-size: 2.5rem;
+    }
+    .grid {
+      gap: 2rem;
+    }
+  }

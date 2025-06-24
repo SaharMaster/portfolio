@@ -1,0 +1,21 @@
+@import '@/styles/variables';
+
+.typewriterWrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.05em;
+  height: 1.1em;
+  background-color: $dark-text;
+  margin-left: 0.2rem;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

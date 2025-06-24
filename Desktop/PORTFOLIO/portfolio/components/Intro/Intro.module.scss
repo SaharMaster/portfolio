@@ -32,3 +32,12 @@
   max-width: 600px;
   margin: 0 auto;
 }
+
+@media (max-width: $breakpoint-mobile) {
+  .headline {
+    font-size: 2.8rem;
+  }
+  .subhead {
+    font-size: 1.1rem;
+  }
+}

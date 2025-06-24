@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import styles from './Intro.module.scss';
+import Typewriter from '../Typewriter/Typewriter';
 
 const Intro = () => {
   return (
@@ -14,7 +15,7 @@ const Intro = () => {
     >
       <div className={styles.content}>
         <h1 className={styles.headline}>
-          I don&apos;t just write code.
+          <Typewriter text="I don't just write code." />
           <br />
           <span className={styles.highlightedText}>I build digital solutions.</span>
         </h1>
