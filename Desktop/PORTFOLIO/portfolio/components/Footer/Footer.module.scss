@@ -8,6 +8,6 @@
   
   p {
     font-size: 0.9rem;
-    color: lighten(var.$dark-text, 50%);
+    color: color.adjust(var.$dark-text, $lightness: 50%);
   }
 }
