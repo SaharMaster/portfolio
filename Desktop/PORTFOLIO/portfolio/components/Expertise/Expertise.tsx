@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 import styles from './Expertise.module.scss';
 
 const expertiseData = {
-  "Languages": ["JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3 / SCSS"],
-  "Frameworks & Libraries": ["React", "Next.js", "Node.js", "Express"],
-  "Tools & Platforms": ["Git & GitHub", "Docker", "Vercel", "Jest", "Figma"],
+  "Languages": ["JavaScript (ES6+)", "TypeScript", "CSS/SCSS", "Python", "Swift"],
+  "Frameworks & Libraries": ["React", "Next.js", "Node.js", "SvelteKit"],
+  "Tools & Platforms": ["Docker", "Vercel", "Jest", "Figma", "GitHub", "GitLab (CI/CD)"],
+  "Skills": ["Full-stack development", "Software engineering", "UI/UX design", "IOS development", "ML/AI", "DevOps"]
 };
 
 const listVariants = {

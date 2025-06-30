@@ -7,22 +7,22 @@ import styles from './Projects.module.scss';
 
 const placeholderProjects: Project[] = [
   {
-    title: 'Project One',
-    description: 'A brief, no-fluff description of what this project is, what problem it solves, and the value it delivered.',
-    technologies: ['Next.js', 'TypeScript', 'SCSS', 'Framer Motion'],
+    title: 'Personal organisation tool',
+    description: 'A prototype of my full-stack personal project. Plan your tasks in a different ways using elegant sticky note design',
+    technologies: ['Next.js', 'TypeScript', 'SCSS', 'React', '<beckend tech>', '<DB tech>', '<testing tech>'],
     liveUrl: '#',
     repoUrl: '#',
   },
   {
-    title: 'Project Two',
-    description: 'This one was a complex backend challenge focused on performance and scalability. The goal was simple: make it fast and reliable.',
-    technologies: ['Node.js', 'PostgreSQL', 'Redis', 'Docker'],
+    title: 'IOS application',
+    description: 'This project was a guide to swift development. <Description, later>',
+    technologies: ['Swift', '<DB tech>', '<other tech>'],
     repoUrl: '#',
   },
   {
-    title: 'Project Three',
-    description: 'A client-facing platform for data visualization. The main challenge was creating a highly interactive and intuitive user interface.',
-    technologies: ['React', 'D3.js', 'GraphQL', 'Jest'],
+    title: 'Python Machine learning project',
+    description: 'Purely personal interest in ML technologies made me start this project. <Description, later>',
+    technologies: ['Python', 'PyTorch', 'TensorFlow', '<DB tech>'],
     liveUrl: '#',
   },
 ];

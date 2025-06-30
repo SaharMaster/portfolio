@@ -39,7 +39,7 @@ const About = () => {
         <div className={styles.textContainer}>
           <h2 className={styles.heading}>A bit about me.</h2>
           <p className={styles.bio}>
-            I’m a developer who builds things for the web. I don't believe in buzzwords or trends, just in solving real problems with clean, efficient code. My approach is simple: understand the goal, plan the execution, and build a solution that lasts.
+            I’m a developer who builds things for the web, desktop and mobile platforms. I don't believe in buzzwords or trends, just in solving real problems with clean, efficient code. My approach is simple: understand the goal, plan the execution, and build a solution that lasts.
           </p>
           <div className={styles.principles}>
             {principles.map((principle) => (
@@ -51,14 +51,11 @@ const About = () => {
           </div>
         </div>
         <div className={styles.imageContainer}>
-          {/* IMPORTANT: Replace 'profile.jpg' with the name of your image file.
-            Make sure the image is in the /public folder.
-          */}
           <Image
-            src="/profile.jpg"
-            alt="A picture of me"
-            width={500}
-            height={600}
+            src="/profile-pic2(512).png"
+            alt="A picture of me, didn't load for some reason, maybe it's a bad haircut..."
+            width={200}
+            height={200}
             className={styles.profileImage}
           />
         </div>

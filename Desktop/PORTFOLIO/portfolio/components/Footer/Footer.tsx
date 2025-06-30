@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p>
-        &copy; {currentYear} Your Name. All Rights Reserved.
+        &copy; {currentYear} Taras Kyshkar. All Rights Reserved.
       </p>
     </footer>
   );

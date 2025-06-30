@@ -6,7 +6,7 @@ import styles from './Contact.module.scss';
 
 const Contact = () => {
     const [copied, setCopied] = useState(false);
-    const email = 'your-email@example.com';
+    const email = 'Taras.Kyshkar0@gmail.com';
   
     const handleCopy = (e: React.MouseEvent<HTMLAnchorElement>) => {
       e.preventDefault();
@@ -27,11 +27,11 @@ const Contact = () => {
         <div className={styles.container}>
           <h2 className={styles.heading}>Get In Touch</h2>
           <p className={styles.subhead}>
-            Have a project or an idea? I'm always open to discussing new opportunities and collaborations.
+            Have a project or an idea or interested in working together? I'm always open to discussing new opportunities and collaborations.
           </p>
           <div className={styles.buttonContainer}>
           <a href={`mailto:${email}`} onClick={handleCopy} className={styles.emailButton}>
-            {copied ? 'Email copied!' : 'Say Hello'}
+            {copied ? 'Email copied!' : 'Contact me'}
           </a>
           </div>
         </div>

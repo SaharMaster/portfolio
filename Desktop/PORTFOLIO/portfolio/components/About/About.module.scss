@@ -9,17 +9,19 @@
 
 .gridContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); // Simplified to a clean 2-column grid
+  grid-template-columns: repeat(2, 1fr); 
   align-items: center;
-  gap: 5rem; // Increased gap for more breathing room
+  gap: 5rem; 
 }
 
 .profileImage {
-  width: 100%;
+  width: 60%;
   height: auto;
   object-fit: cover;
   max-height: 600px;
-  border-radius: 8px; // Soften the image corners slightly
+  border-radius: 50%;
+  border: 8px solid white;
+  box-shadow: 0 0 19px 5px #dddddd;
 }
 
 .heading {
@@ -58,7 +60,7 @@
     padding: 4rem 1rem;
   }
   .gridContainer {
-    grid-template-columns: 1fr; // Stack columns on mobile
+    grid-template-columns: 1fr; 
     gap: 3rem;
   }
   .heading {

@@ -1,5 +1,4 @@
-// FILE: components/Intro/Intro.tsx
-'use client'; // This is required for components with hooks like animation
+'use client';
 
 import { motion } from 'framer-motion';
 import styles from './Intro.module.scss';

@@ -25,7 +25,7 @@ const Header = () => {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
-          Your Name
+          Taras Kyshkar
         </Link>
         
         {/* Desktop Navigation */}
@@ -35,7 +35,7 @@ const Header = () => {
             <li><a href="#projects" className={styles.navLink}>Projects</a></li>
             <li><a href="#contact" className={styles.navLink}>Contact</a></li>
             <li> {/* The button is now a list item for proper alignment */}
-              <a href="/John-Doe-Resume.pdf" download className={styles.resumeButton}>
+              <a href="placeholder" download className={styles.resumeButton}>
                 Download CV
               </a>
             </li>
@@ -57,7 +57,7 @@ const Header = () => {
               <li><a href="#projects" className={styles.mobileNavLink} onClick={closeMenu}>Projects</a></li>
               <li><a href="#contact" className={styles.mobileNavLink} onClick={closeMenu}>Contact</a></li>
             </ul>
-            <a href="/John-Doe-Resume.pdf" download className={styles.mobileResumeButton}>
+            <a href="placeholder" download className={styles.mobileResumeButton}>
               Download CV
             </a>
           </div>
