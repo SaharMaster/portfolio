@@ -1,11 +1,12 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 .expertise {
-  padding: $section-padding;
+  padding: var.$section-padding;
 }
 
 .container {
-  max-width: $container-width;
+  max-width: var.$container-width;
   margin: 0 auto;
 }
 
@@ -36,7 +37,7 @@
     transform: translateX(-50%);
     width: 40px;
     height: 3px;
-    background-color: $primary-accent;
+    background-color: var.$primary-accent;
   }
 }
 
@@ -49,10 +50,10 @@
 .skillItem {
   font-size: 1.1rem;
   line-height: 1.8;
-  color: lighten($dark-text, 25%);
+  color: color.adjust(var.$dark-text, $lightness: 25%);
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: var.$breakpoint-mobile) {
     .expertise {
       padding: 4rem 1rem;
     }

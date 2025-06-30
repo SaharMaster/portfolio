@@ -1,19 +1,20 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 // Define a mixin for the shared button styles
 @mixin resume-button-styles {
-  font-family: $font-secondary;
+  font-family: var.$font-secondary;
   font-weight: 500;
-  color: $primary-accent;
-  border: 1px solid $primary-accent;
+  color: var.$primary-accent;
+  border: 1px solid var.$primary-accent;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   transition: all 0.2s ease;
   text-decoration: none;
 
   &:hover {
-    background-color: lighten($primary-accent, 40%);
-    color: $dark-text;
+    background-color: color.adjust(var.$primary-accent, $lightness: 40%);
+    color: var.$dark-text;
   }
 }
 
@@ -25,19 +26,19 @@
   padding: 1rem 2rem;
   background-color: rgba(248, 248, 248, 0.8);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid lighten($dark-text, 85%);
+  border-bottom: 1px solid color.adjust(var.$dark-text, $lightness: 85%);
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: $container-width;
+  max-width: var.$container-width;
   margin: 0 auto;
 }
 
 .logo {
-  font-family: $font-secondary;
+  font-family: var.$font-secondary;
   font-weight: bold;
   font-size: 1.5rem;
 }
@@ -58,7 +59,7 @@
 .navLink {
   font-size: 1rem;
   font-weight: 500;
-  color: lighten($dark-text, 25%);
+  color: color.adjust(var.$dark-text, $lightness: 25%);
   position: relative;
   padding: 0.5rem 0;
   transition: color 0.2s ease;
@@ -71,12 +72,12 @@
     left: 0;
     width: 0;
     height: 2px;
-    background-color: $primary-accent;
+    background-color: var.$primary-accent;
     transition: width 0.3s ease;
   }
 
   &:hover {
-    color: $dark-text;
+    color: var.$dark-text;
     &::after {
       width: 100%;
     }
@@ -108,7 +109,7 @@
   .bar {
     width: 2rem;
     height: 0.25rem;
-    background: $dark-text;
+    background: var.$dark-text;
     border-radius: 10px;
     transition: all 0.3s linear;
     position: relative;
@@ -131,7 +132,7 @@
   display: none;
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: var.$breakpoint-mobile) {
   .desktopNav {
     display: none;
   }
@@ -146,7 +147,7 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background: $light-bg;
+    background: var.$light-bg;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -167,7 +168,7 @@
   .mobileNavLink {
     font-size: 1.5rem;
     font-weight: bold;
-    font-family: $font-secondary;
+    font-family: var.$font-secondary;
     text-decoration: none;
   }
 

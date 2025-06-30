@@ -1,8 +1,9 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 .about {
-  padding: $section-padding;
-  max-width: $container-width;
+  padding: var.$section-padding;
+  max-width: var.$container-width;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -32,7 +33,7 @@
 .bio {
   font-size: 1.1rem;
   line-height: 1.7;
-  color: lighten($dark-text, 25%);
+  color: color.adjust(var.$dark-text, $lightness: 25%);
   margin-bottom: 2rem;
   max-width: 90%;
 }
@@ -48,14 +49,14 @@
   align-items: center;
   gap: 0.75rem;
   font-size: 1.1rem;
-  font-family: $font-secondary;
+  font-family: var.$font-secondary;
 
   svg path {
-    fill: $dark-text; // Change the checkmark icon to be dark
+    fill: var.$dark-text; // Change the checkmark icon to be dark
   }
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: var.$breakpoint-mobile) {
   .about {
     padding: 4rem 1rem;
   }

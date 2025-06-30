@@ -39,7 +39,7 @@ const About = () => {
         <div className={styles.textContainer}>
           <h2 className={styles.heading}>A bit about me.</h2>
           <p className={styles.bio}>
-            I’m a developer who builds things for the web, desktop and mobile platforms. I don't believe in buzzwords or trends, just in solving real problems with clean, efficient code. My approach is simple: understand the goal, plan the execution, and build a solution that lasts.
+            I&apos;m a developer who builds things for the web, desktop and mobile platforms. I don't believe in buzzwords or trends, just in solving real problems with clean, efficient code. My approach is simple: understand the goal, plan the execution, and build a solution that lasts.
           </p>
           <div className={styles.principles}>
             {principles.map((principle) => (

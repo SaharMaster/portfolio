@@ -1,4 +1,4 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
 
 .typewriterWrapper {
   display: inline-flex;
@@ -9,7 +9,7 @@
   display: inline-block;
   width: 0.05em;
   height: 1.1em;
-  background-color: $dark-text;
+  background-color: var.$dark-text;
   margin-left: 0.2rem;
   animation: blink 0.7s infinite;
 }

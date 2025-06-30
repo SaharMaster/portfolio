@@ -1,12 +1,12 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
 
 .projects {
-  padding: $section-padding;
+  padding: var.$section-padding;
   background-color: #ffffff; 
 }
 
 .container {
-  max-width: $container-width;
+  max-width: var.$container-width;
   margin: 0 auto;
 }
 
@@ -22,7 +22,7 @@
   gap: 2rem;
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: var.$breakpoint-mobile) {
     .projects {
       padding: 4rem 1rem;
     }

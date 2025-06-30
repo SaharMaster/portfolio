@@ -27,7 +27,7 @@ const Contact = () => {
         <div className={styles.container}>
           <h2 className={styles.heading}>Get In Touch</h2>
           <p className={styles.subhead}>
-            Have a project or an idea or interested in working together? I'm always open to discussing new opportunities and collaborations.
+            Have a project or an idea or interested in working together? I&apos;m always open to discussing new opportunities and collaborations.
           </p>
           <div className={styles.buttonContainer}>
           <a href={`mailto:${email}`} onClick={handleCopy} className={styles.emailButton}>

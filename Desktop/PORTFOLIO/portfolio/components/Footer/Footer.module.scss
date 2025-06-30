@@ -1,12 +1,13 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 .footer {
   padding: 2rem;
   text-align: center;
-  border-top: 1px solid lighten($dark-text, 85%);
+  border-top: 1px solid color.adjust(var.$dark-text, $lightness: 85%);
   
   p {
     font-size: 0.9rem;
-    color: lighten($dark-text, 50%);
+    color: lighten(var.$dark-text, 50%);
   }
 }

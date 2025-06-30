@@ -1,7 +1,8 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 .contact {
-    padding: $section-padding;
+    padding: var.$section-padding;
     text-align: center;
   }
   
@@ -18,7 +19,7 @@
   .subhead {
     font-size: 1.25rem;
     line-height: 1.7;
-    color: lighten($dark-text, 25%);
+    color: color.adjust(var.$dark-text, $lightness: 25%);
     margin-bottom: 3rem;
   }
   
@@ -29,11 +30,11 @@
   
   .emailButton {
     display: inline-block;
-    font-family: $font-secondary;
+    font-family: var.$font-secondary;
     font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff;
-    background-color: $primary-accent;
+    background-color: var.$primary-accent;
     padding: 1rem 2.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -41,11 +42,11 @@
   
     &:hover {
       transform: translateY(-3px);
-      box-shadow: 0 8px 15px rgba($primary-accent, 0.3);
+      box-shadow: 0 8px 15px rgba(var.$primary-accent, 0.3);
     }
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: var.$breakpoint-mobile) {
     .contact {
       padding: 4rem 1rem;
     }

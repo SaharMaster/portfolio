@@ -1,4 +1,5 @@
-@import '@/styles/variables';
+@use '@/styles/variables' as var;
+@use 'sass:color';
 
 .intro {
   display: flex;
@@ -11,7 +12,7 @@
 }
 
 .content {
-  max-width: $container-width;
+  max-width: var.$container-width;
 }
 
 .headline {
@@ -22,18 +23,18 @@
 }
 
 .highlightedText {
-  color: $primary-accent;
+  color: var.$primary-accent;
 }
 
 .subhead {
   font-size: 1.25rem;
-  color: lighten($dark-text, 40%);
+  color: color.adjust(var.$dark-text, $lightness: 40%);
   line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
 }
 
-@media (max-width: $breakpoint-mobile) {
+@media (max-width: var.$breakpoint-mobile) {
   .headline {
     font-size: 2.8rem;
   }
