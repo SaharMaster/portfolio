@@ -15,6 +15,10 @@
   gap: 5rem; 
 }
 
+.profileContainer {
+  background-color: #dddddd00;
+}
+
 .profileImage {
   width: 60%;
   height: auto;
@@ -64,6 +68,9 @@
   .gridContainer {
     grid-template-columns: 1fr; 
     gap: 3rem;
+  }
+  .profileContainer {
+    display: none;
   }
   .heading {
     font-size: 2.5rem;

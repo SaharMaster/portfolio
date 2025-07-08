@@ -50,9 +50,9 @@ const About = () => {
             ))}
           </div>
         </div>
-        <div className={styles.imageContainer}>
+        <div className={styles.profileContainer}>
           <Image
-            src="/profile-pic2(512).png"
+            src="/profile-pic2.jpg"
             alt="A picture of me, didn't load for some reason, maybe it's a bad haircut..."
             width={200}
             height={200}

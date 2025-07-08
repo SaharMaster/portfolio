@@ -37,6 +37,22 @@
   margin: 0 auto;
 }
 
+.logoContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profileImage {
+  height: auto;
+  object-fit: cover;
+  max-height: 600px;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 1px #dddddd;
+  z-index: 1;
+}
+
 .logo {
   font-family: var.$font-secondary;
   font-weight: bold;

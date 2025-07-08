@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import styles from './Header.module.scss';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,10 +25,18 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <Link href="/" className={styles.logo} onClick={closeMenu}>
-          Taras Kyshkar
-        </Link>
-        
+        <div className={styles.logoContainer}>
+        <Image
+              src="/profile-pic2.jpg"
+              alt="A picture of me, didn't load for some reason, maybe it's a bad haircut..."
+              width={40}
+              height={40}
+              className={styles.profileImage}
+            />
+          <Link href="/" className={styles.logo} onClick={closeMenu}>
+            Taras Kyshkar
+          </Link>
+        </div>
         {/* Desktop Navigation */}
         <div className={styles.desktopNav}>
           <ul className={styles.navList}>
